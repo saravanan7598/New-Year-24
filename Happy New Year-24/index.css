@@ -1,0 +1,741 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body
+{
+   background-color: black;
+   color: white;
+   font-family:Arial, Helvetica, sans-serif;
+/
+   
+}
+.h1
+{
+     color: orange;
+     font-size: 150px;
+     text-align: center; 
+      margin-top: 30px; 
+     letter-spacing: 10px;
+     position: absolute;
+     top: 30px;
+     left: 37%;
+}
+.p{
+    text-align: center;
+    font-size: 40px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: cursive;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 250px;
+    left: 30%;
+}
+.box
+{
+
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.h2
+{
+   color: orange;
+   font-size: 55px;
+   margin-top: 150px;
+   margin-left: 40px;
+}
+.box .display1
+{
+   
+     color: white;
+     font-size: 30px;
+     position: absolute;
+     bottom: -40px;
+     letter-spacing: 10px;
+     margin-left: 10px;
+}
+.box .display2
+{
+   
+     color: white;
+     font-size: 30px;
+     position: absolute;
+     bottom: -40px;
+     letter-spacing: 10px;
+     margin-left: 10px;
+}
+.box .display3
+{
+   
+     color: white;
+     font-size: 30px;
+     position: absolute;
+     bottom: -40px;
+     letter-spacing: 10px;
+     margin-left: 35px;
+
+}
+.box .display4
+{
+   
+     color: white;
+     font-size: 30px;
+     position: absolute;
+     bottom: -40px;
+     letter-spacing: 10px;
+     margin-left: 13px;
+}
+
+.container
+{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px,1fr));
+    gap: 20px;
+    width: 80%;
+    margin-left: 119px;
+    position: absolute;
+    top: 300px;
+  
+}
+.box .counter
+{
+    color:orange;
+    font-size: 140px;
+    margin-bottom:10px;
+
+}
+.img1
+{
+    width: 240px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline;
+
+
+}
+.img2
+{
+    margin-left: 63pc;
+    width: 240px;
+    display: inline;
+    margin-bottom: 10px;
+    
+}
+.img3
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 900px;
+    opacity: 0.3;
+}
+.img4
+{
+    position: absolute;
+    top:-100px;
+    right: 0;
+    width: 900px;
+    opacity: 0.4;
+}
+
+.overall
+{
+    display: block;
+}
+/* ----------------------new year 2024------------------------ */
+
+.wishes
+{
+    display: none;
+}
+
+
+.wishes .newyear-msg 
+{
+    position: absolute;
+    top: 50%;
+    margin-left: 31%;
+    opacity: 0;
+    animation: message 3s ease-in-out 6s forwards;
+    z-index: 1111;
+    
+}  
+.wishes .newyear-msg h3
+{
+    
+    font-size: 80px;
+    letter-spacing: 14px;
+    text-align: center;
+    font-family:cursive;
+    
+}
+.wishes .newyear-msg h2
+{
+    color: orange;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 15px;
+    line-height: 30px;
+    animation: messagename 3s ease-in-out 12s forwards;
+    transition: transform 0.4s;
+    
+
+}
+
+
+@keyframes messagename {
+
+    0%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    76%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+    
+}
+@keyframes message 
+{
+    0%
+    {
+        opacity: 0;
+        margin-top: 0;
+    }
+    100%
+    {
+        opacity: 1;
+        margin-top: -210px;
+    }
+}
+
+/* ----------------year=------------------ */
+.wishes .num1
+{
+    color: white;
+    animation: num1color 2s ease-in-out 6s forwards;
+
+
+}
+.wishes .num2
+{
+    color: white;
+    animation: num2color 2s ease-in-out 6s forwards;
+
+}
+.wishes .num3
+{
+    color: white;
+    animation: num3color 2s ease-in-out 6s forwards;
+
+
+}
+.wishes .num5
+{
+    color: rgb(255, 255, 255);
+    animation: num5color 2s ease-in-out 4s forwards;
+
+
+
+}
+
+
+/*no*/
+@keyframes num1color
+{
+    0%
+    {
+        color: white;
+    }
+    100%
+    {
+        color:rgb(255, 255, 255);
+          
+    }
+}
+@keyframes num2color
+{
+    0%
+    {
+        color: white;
+    }
+    100%
+    {
+        color:rgb(255, 255, 255);
+
+    }
+}
+
+@keyframes num3color
+{
+    0%
+    {
+        color: white;
+    }
+    100%
+    {
+        color: rgb(255, 170, 0);
+
+    }
+}
+.wishes .num4
+{
+    color: white;
+    position: absolute;
+    top: 0%;
+    animation: num4 2.5s ease-in-out 4s forwards;
+
+
+}
+@keyframes num4
+{
+    0%{
+        top: 0%;
+    }
+    100%
+    {
+        top: -250%;
+    }
+}
+.wishes .year 
+{
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    margin-left: 38.3%;
+}
+.wishes .year span
+{
+    font-size: 160px;
+    font-weight: 800;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -4px;
+    z-index: 1111;
+
+}
+.wishes .new
+{
+    position: absolute;
+    right: -100px;
+    top: 10px;
+    font-size: 170px;
+    animation: new 5s ease-in-out 1.5s forwards;
+
+
+}
+@keyframes new
+{
+    0%{
+        right: -100px;
+    }
+    40%{
+        right: 1065px;
+    }
+    90%{
+        right: 1065px;
+    }
+    100%
+    {
+        right: 1152px;
+        color: rgb(255, 170, 0);
+
+    }
+}
+/* -------------------bollon ----------------------------------- */
+.wishes .bollon
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    margin-top: -230px;
+    top: 50%;
+    right: -120px;
+    margin-right: -15px;
+    animation: bollon 5s ease-in-out 1.5s forwards;
+    z-index: 0;
+   
+
+    
+   
+}
+@keyframes bollon
+{
+    0%{
+        right: -100px;
+    }
+    40%{
+        right: 1073px;
+    }
+    50%{
+        right: 1173px;
+        top: 50%;
+    }
+    100%
+    {
+        right: 1170px;
+        top: -200%;
+    }
+}
+.wishes .bollon::after
+{
+    content: '';
+    width: 4%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+}
+.wishes .bollon::before
+{
+    content: '';
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent red transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -8px;
+    z-index: 111;
+}
+
+/* ------------------fireworks--------------- */
+.wishes .fireworks
+{
+         position: relative;
+         opacity: 0;
+        animation: fireworks 5s ease-in-out 2.5s forwards;
+
+
+}
+/* /* @keyframes fireworks
+{
+    0%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
+     */
+
+.wishes .cracker
+{
+         position: absolute;
+         width: 4px;
+         height: 80px;
+         transform-origin: 50% 100%;
+         overflow: hidden;
+}
+.wishes .cracker::before
+{
+    content: '';
+    background-color: rgba(255, 208, 0, 0.925);
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0; 
+    animation: fire 2s ease infinite ;
+    box-shadow:  -2px 2px 12px 2px grey,
+              
+}
+@keyframes fire {
+    0%{
+        top: 100%;
+    }
+    25%{
+        top: 50%;
+    }
+    50%{
+        top: -20%;
+    }
+    75%{
+        top: -50%;
+    }
+    100%{
+        top: -50%;
+    }
+    
+    
+    
+}
+.wishes .cracker:nth-child(1)
+{
+    transform: rotate(0deg) translateY(-15px); 
+}
+.wishes .cracker:nth-child(2)
+{
+    
+    transform: rotate(30deg) translateY(-15px);
+}.cracker:nth-child(3)
+{
+    transform: rotate(60deg) translateY(-15px); 
+} .wishes .cracker:nth-child(4)
+{
+    transform: rotate(90deg) translateY(-15px); 
+}.wishes .cracker:nth-child(5)
+{
+    transform: rotate(120deg) translateY(-15px); 
+}.wishes .cracker:nth-child(6)
+{
+    transform: rotate(150deg) translateY(-15px); 
+} .wishes .cracker:nth-child(7)
+{
+    transform: rotate(180deg) translateY(-15px); 
+}.wishes .cracker:nth-child(8)
+{
+    transform: rotate(210deg) translateY(-15px); 
+}.wishes .cracker:nth-child(9)
+{
+    transform: rotate(240deg) translateY(-15px); 
+}.wishes .cracker:nth-child(10)
+{
+    transform: rotate(270deg) translateY(-15px); 
+}.wishes .cracker:nth-child(11)
+{
+    transform: rotate(300deg) translateY(-15px); 
+}
+.wishes .cracker:nth-child(12)
+{
+    transform: rotate(330deg) translateY(-15px); 
+}
+.wishes .cracker:nth-child(13)
+{
+    transform: rotate(360deg) translateY(-15px); 
+}
+.wishes #fireworks1
+{
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: scale(1);
+}
+.wishes #fireworks2
+{
+    position:absolute;
+    left: 70%;
+    top: 75%;
+    transform: scale(0.7);
+}
+.wishes #fireworks3
+{
+    position:absolute;
+    left: 69%;
+    top: 11%;
+    transform: scale(1.1);
+}
+.wishes #fireworks4
+{
+    position:absolute;
+    left: 35%;
+    top: 26%;
+    transform: scale(0.4);
+}
+.wishes #fireworks5
+{
+    position:absolute;
+    left:38%;
+    top: 72%;
+    transform: scale(0.4);
+}
+
+.wishes #fireworks6
+{
+    position:absolute;
+    left: 1%;
+    top: 72%;
+    transform: scale(0.8);
+}
+.wishes #fireworks7
+{
+    position:absolute;
+    left: 63%;
+    top: 55%;
+    transform: scale(0.4);
+}
+.wishes  .wish h2 ,h3
+{
+    color: white; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.wishes .wish
+{
+    position: absolute;
+    top: 84%;
+    left: 41%;
+    line-height: 30px;
+    opacity: 0;
+    animation: wishes 1s ease-in-out 18s forwards;
+}
+.wishes .wish h2
+{
+   font-size: 33px;
+   letter-spacing: 3.5px;
+
+}
+.wishes .wish h3
+{
+    color: orange;
+    line-height: 37px;
+    animation: wishesname 1s ease-in-out 3s forwards;
+
+   
+
+}
+@keyframes wishesname {
+
+    0%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    78%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+    
+}
+@keyframes wishes
+{
+    0%{
+        opacity: 0;
+    }
+    
+    100%
+    {
+        opacity: 1;
+    }
+}
+/* ------------ */
+.wishes .bollons img
+{ 
+        width: 300px;
+        position: absolute;
+        top: 98%;
+        left: 5%;
+        transform: rotate(5deg);
+        animation: skybollons 13s ease-in-out 9s forwards;
+}
+@keyframes  skybollons
+{
+    0%{
+        top: 98%;
+
+    }
+    100%{
+        top: 19%;
+    }
+}
+
+.wishes .bollons2 img
+{ 
+        width: 150px;
+        position: absolute;
+        top: 113%;
+        left: 210px;
+        transform: rotate(5deg);
+        animation: skybollon 13s ease-in-out 9s forwards;
+}
+@keyframes  skybollon
+{
+    0%{
+        top:113%;
+
+    }
+    100%{
+        top: 39%;
+    }
+}
+
+.wishes .images img
+{
+    width:100%;
+}
+.wishes .quotes h1
+{
+    color: rgb(201, 201, 201);
+    position: absolute;
+    top: 47.7%;
+    left: 31%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    animation: quotees 7s steps(80) 11s  forwards;
+    /* opacity: 0; */  
+    visibility: hidden;
+
+}
+@keyframes  quotees 
+{
+    0%
+    {
+        visibility: hidden;
+
+    }
+     100%
+     {
+        visibility:visible;
+
+     }
+
+}
+.wishes .quotes h1 small
+{
+    color: orange;
+}
+.wishes .quotes h1 span
+{
+    position: relative;
+    
+}
+.wishes .quotes h1 span::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid rgb(255, 255, 255);
+    animation: quotes 8s steps(90) 11s  forwards;
+    opacity: 1;
+    background-color: rgb(0, 0, 0);
+    padding: 1.5px;
+    
+    
+}
+
+@keyframes  quotes 
+{
+
+     100%
+     {
+        left: 100%;
+        margin: 0 -35px 0 7px; 
+        
+        
+     }
+}
